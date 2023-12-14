@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Task9
+{% endblock title %}
+
+{% block content %}
+<form method=post class="mx-3">
+  <div class="my-3">
+    <label for="emailInput" class="form-label">Email</label>
+    <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" name="email">
+    <div id="emailHelp" class="form-text">Примеры почты: admin@mail.ru, user@gmail.com, John@yandex.com</div>
+  </div>
+  <div class="mb-3">
+    <label for="passwordInput" class="form-label">Name</label>
+    <input type="password" class="form-control" id="passwordInput" aria-describedby="passwordHelp", name="password">
+    <div id="passwordHelp" class="form-text">Примеры паролей: password_1, password_2, password_3</div>
+  </div>
+  <button type="submit" class="btn btn-primary">Войти</button>
+</form>
+{% endblock content %}
